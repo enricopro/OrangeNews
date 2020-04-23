@@ -15,6 +15,7 @@ import {
 
 export default function Article({ results }) {
 
+  /*SET PULL TO REFRESH*/ 
       const [refreshing, setRefreshing] = React.useState(false);
 
       const onRefresh = React.useCallback(() => {
