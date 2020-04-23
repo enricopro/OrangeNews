@@ -28,8 +28,8 @@ export default function App() {
   const category = useSelector(state => state.category);
 
     const apikey = "292933993e8e4a0cb8137bbcd3d8f212";
-    const apiurl = "https://newsapi.org/v2/everything?q=bitcoin&apiKey=292933993e8e4a0cb8137bbcd3d8f212";
 
+  /*CHANGE STATE USING REDUX WHEN SOMETHING IS TYPED IN TEXTINPUTBOX*/
     const handleInput = e => {
         dispatch(changetext(e));
         dispatch(handlecategory(""));
@@ -40,7 +40,7 @@ export default function App() {
                            });
       }
 
-
+/*SET BACK BUTTON TO GO BACK TO HOME SCREEN*/
 useEffect(() => {
     const setHome = () => {
 
