@@ -19,6 +19,7 @@ export default function Home() {
   const category = useSelector(state => state.category);
   const results = useSelector(state => state.results);
 
+  /*EVERY DIFFERENT FUNCTION TO SET CATEGORY*/
   const setRecentNews = () => {
           dispatch(handlecategory("general"));
           axios("https://newsapi.org/v2/top-headlines?language=en&apiKey=" + apikey).then(response => {
